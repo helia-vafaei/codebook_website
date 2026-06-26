@@ -1,0 +1,13 @@
+{
+    "name": "codebook-backend",
+    "version": "1.0.0",
+    "description": "Backend for CodeBook",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "json-server": "^0.17.0",
+        "json-server-auth": "^2.1.0"
+    }
+}
