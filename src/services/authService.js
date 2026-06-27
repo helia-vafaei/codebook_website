@@ -4,7 +4,7 @@ export async function login(authDetail){
         headers: {"content-Type": "application/json"},
         body: JSON.stringify(authDetail)
     }
-    const response = await fetch(`http://localhost:8000/login`, requestOptions);
+    const response = await fetch(`https://codebook-website-backend2.onrender.com/login`, requestOptions);
     if(!response.ok){
         throw { message: response.statusText, status: response.status }; //eslint-disable-line
     }
@@ -24,7 +24,7 @@ export async function register(authDetail){
         headers: {"content-Type": "application/json"},
         body: JSON.stringify(authDetail)
     }  
-    const response = await fetch(`http://localhost:8000/register`, requestOptions);
+    const response = await fetch(`https://codebook-website-backend2.onrender.com/register`, requestOptions);
     if(!response.ok){
         throw { message: response.statusText, status: response.status }; //eslint-disable-line
     }
